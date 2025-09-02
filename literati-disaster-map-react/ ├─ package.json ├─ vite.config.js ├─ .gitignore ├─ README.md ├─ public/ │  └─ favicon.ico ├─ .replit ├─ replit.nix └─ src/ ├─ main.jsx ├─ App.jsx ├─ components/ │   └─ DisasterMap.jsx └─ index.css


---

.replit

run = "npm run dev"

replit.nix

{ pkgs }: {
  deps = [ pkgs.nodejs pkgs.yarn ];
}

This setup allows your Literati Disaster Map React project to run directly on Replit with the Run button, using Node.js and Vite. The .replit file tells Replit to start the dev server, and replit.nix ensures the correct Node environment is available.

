@@ -1,0 +1,17 @@
+literati-disaster-map-react/ ├─ package.json ├─ vite.config.js ├─ .gitignore ├─ README.md ├─ public/ │  └─ favicon.ico ├─ .replit ├─ replit.nix └─ src/ ├─ main.jsx ├─ App.jsx ├─ components/ │   └─ DisasterMap.jsx └─ index.css
+
+
+---
+
+.replit
+
+run = "npm run dev"
+
+replit.nix
+
+{ pkgs }: {
+  deps = [ pkgs.nodejs pkgs.yarn ];
+}
+
+This setup allows your Literati Disaster Map React project to run directly on Replit with the Run button, using Node.js and Vite. The .replit file tells Replit to start the dev server, and replit.nix ensures the correct Node environment is available.
+
